@@ -58,17 +58,16 @@
 Console.WriteLine("Введите два числа ");
 int number1 = int.Parse(Console.ReadLine()!);
 int number2 = int.Parse(Console.ReadLine()!);
-Console.WriteLine($"Квадрат первого числа равен {Math.Pow(number1,2)}, квадрат второго числа равен {Math.Pow(number2,2)}");
-if (number1 == Math.Pow(number2,2) || number2 == Math.Pow(number1,2))
+if (number1 == Math.Sqrt(number2) || number2 == Math.Sqrt(number1))
 {
-    if (Math.Pow(number1,2) == number2){
-        Console.WriteLine("Квадрат первого числа равен второму числу");
+    if (Math.Sqrt(number1) == number2){
+        Console.WriteLine("Первое введенное число является квадратом второго");
     }
-    if (Math.Pow(number2,2) == number1){
-        Console.WriteLine("Квадрат второго числа равен первому числу");
+    if (Math.Sqrt(number2) == number1){
+        Console.WriteLine("Второе введенное число является квадратом первого ");
     }
 }
 else
 {
-    Console.WriteLine("Ни одно из введенных чисел не является квадратом второго");
+    Console.WriteLine("Ни одно из введенных чисел не является квадратом другого");
 }
