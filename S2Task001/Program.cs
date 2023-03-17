@@ -22,3 +22,5 @@ if(number.Length == 3){
 else
 Console.WriteLine("Введено неверное чило ");
 
+// && - и 
+// || - или 
